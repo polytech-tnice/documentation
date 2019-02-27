@@ -19,9 +19,7 @@ Non utilisé dans l'état actuel du projet :
 - Loïc Rose
 - Antoine Steyer
 
-## Descriptioon
-
-Description du projet
+## Description
 
 T-Nice est une application ludique permettant d’importer dans un cadre culturel les nouvelles technologies du moment. Nous proposons une expérience unique aux visiteurs du musée du Sport en créant une application multi-supports permettant de jouer au tennis avec un partenaire en utilisant la réalité virtuelle. De plus, les spectateurs du match pourront influencer sur le vent directement dans le match grâce à des smartphones. Nous offrons aussi la possibilité à une personne de prendre le contrôle des caméras durant le match.
 
