@@ -69,3 +69,14 @@ Pour les joueurs, il faut lancer l'applications lorsque le serveur unity est lan
 **Caméras** :
 
 Une fois que le serveur de jeu Unity est lancé on peut se connecter dessus afin de controller les caméras pendant le match en lançant un client Unity depuis l'IDE avec le button "Play" ou en le générant avec "Build & Run" dans le menu "File" de Unity. Une fois sur le lobby il faut renseigner l'ip de l'ordinateur où se trouve le serveur Unity et appuyer sur le bouton "Run Camera".
+
+**Mobile app** :
+
+Pour le deploiement de l'application mobile, il faut tout d'abord cloner le repo sur github ([ici](https://github.com/polytech-tnice/mobile-app)) puis il faut faire la commande: `npm install` pour installer les paquets. 
+Ensuite, pour configurer l'IP sur laquelle l'application va taper pour les appels au serveur node, il faut aller dans *src/app/environment.ts* et modifier l'ip dans baseUrl. Pour savoir l'IP qu'il faut, faire la commande: `ipconfig` sur la machine qui a le serveur node (pour windows). 
+Puis, pour lancer l'application 2 choix possibles:
+
+- Lancer la commande: `ionic serve` et l'application va se lancer sur le navigateur. Pour installer ionic si vous ne l'avez pas il faut faire la commande: `npm install -g ionic`.
+- Pour simuler l'application sur mobile, vous pouvez utiliser soit un emulateur (pour Android il faut Android Studio) soit un telephone android. D'abord il faut faire un build: `ionic cordova build android` puis soit vous emulez sur android en faisant: `ionic cordova emulate android` et pour installer l'APK sur android, faites: `ionic cordova run android` en ayant au prealable branche votre smartphone android et active le debug USB en mode developpeur. 
+
+Voila, vous pouvez normalement tester l'application.
